@@ -34,6 +34,7 @@ const IpBarcodeScanner = forwardRef<IpBarcodeScannerType, Props>(
         <View style={styles.centeredView}>
           <RNCamera
             style={styles.camera}
+            captureAudio={false}
             onGoogleVisionBarcodesDetected={(result: any) => {
               let { barcodes } = result;
               if (barcodes[0]) {
