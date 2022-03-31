@@ -12,7 +12,7 @@ Follow the platform-specific installation steps below.  For help troubleshooting
 
 https://react-native-camera.github.io/react-native-camera/docs/installation
 
-## iOS - Other required steps
+## iOS - Required steps
 
 Add permissions with usage descriptions to your app ```Info.plist```:
 
@@ -20,34 +20,15 @@ Add permissions with usage descriptions to your app ```Info.plist```:
 <!-- Required with iOS 10 and higher -->
 <key>NSCameraUsageDescription</key>
 <string>Your message to user when the camera is accessed for the first time</string>
-
-<!-- Required with iOS 11 and higher: include this only if you are planning to use the camera roll -->
-<key>NSPhotoLibraryAddUsageDescription</key>
-<string>Your message to user when the photo library is accessed for the first time</string>
-
-<!-- Include this only if you are planning to use the camera roll -->
-<key>NSPhotoLibraryUsageDescription</key>
-<string>Your message to user when the photo library is accessed for the first time</string>
-
-<!-- Include this only if you are planning to use the microphone for video recording -->
-<key>NSMicrophoneUsageDescription</key>
-<string>Your message to user when the microphone is accessed for the first time</string>
 ```
 
-## Android - Other required steps
+## Android - Required steps
 
 Add permissions to your app ```android/app/src/main/AndroidManifest.xml``` file:
 
 ```xml
 <!-- Required -->
 <uses-permission android:name="android.permission.CAMERA" />
-
-<!-- Include this only if you are planning to use the camera roll -->
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-<!-- Include this only if you are planning to use the microphone for video recording -->
-<uses-permission android:name="android.permission.RECORD_AUDIO"/>
 ```
 
 Insert the following lines in ```android/app/build.gradle```:
