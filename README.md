@@ -11,16 +11,26 @@ npm install interpro-react-native-barcode-scanner
 ## Usage
 
 ```js
-import { InterproReactNativeBarcodeScannerView } from "interpro-react-native-barcode-scanner";
+import {
+  IpBarcodeScanner,
+  IpBarcodeScannerType,
+} from 'interpro-react-native-barcode-scanner';
 
 // ...
 
-<InterproReactNativeBarcodeScannerView color="tomato" />
+const scannerRef = useRef<IpBarcodeScannerType>(null);
+
+// ...
+
+<Button
+  onPress={() => scannerRef?.current?.openScanner()}
+  title={'Scan Barcode'}
+/>
+<IpBarcodeScanner
+  ref={scannerRef}
+  onBarcodeDetected={(data: any) => console.log(data)}
+/>
 ```
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
 ## License
 
