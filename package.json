@@ -1,6 +1,6 @@
 {
   "name": "interpro-react-native-barcode-scanner",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A configurable barcode scanning button that uses RNCamera to capture and return barcode and QR code data",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -143,5 +143,8 @@
         }
       ]
     ]
+  },
+  "dependencies": {
+    "react-native-camera": "^4.2.1"
   }
 }
