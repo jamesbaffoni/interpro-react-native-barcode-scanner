@@ -1,6 +1,6 @@
 # interpro-react-native-barcode-scanner
 
-A configurable barcode scanning button that uses RNCamera to capture and return barcode and QR code data.  Built by InterPro Solutions
+A configurable barcode scanning component that uses RNCamera to capture and return barcode and QR code data.  Built by InterPro Solutions
 
 ## Installation
 
